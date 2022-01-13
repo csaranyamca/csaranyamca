@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="test.xsl"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NewXMLSchema.xsd">
+    <Employee>
+        <emp-id>emp-id</emp-id>
+        <Emp-name>Emp-name</Emp-name>
+        <Emp-age>0</Emp-age>
+        <Emp-salary>50000</Emp-salary>
+        <Emp-emailid>Emp-emailid</Emp-emailid>
+        <Emp-Phonenum>Emp-Phonenum</Emp-Phonenum>
+        <Emp-designation>Emp-designation</Emp-designation>
+    </Employee>
+</Company>
