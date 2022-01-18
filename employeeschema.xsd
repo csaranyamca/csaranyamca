@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ey:schema xmlns:ey="http://www.w3.org/2001/XMLSchema">
+    <ey:element name="Employee">
+        <ey:complexType>
+            <ey:sequence>
+                <ey:element name="emp" maxOccurs="unbounded">
+                    <ey:complexType>
+                        <ey:sequence>
+                            <ey:element name="emp-id" type="ey:string"></ey:element>
+                            <ey:element name="name" type="ey:string"></ey:element>
+                            <ey:element name="age" type="ey:integer"></ey:element>
+                            <ey:element name="gender" type="ey:string"></ey:element>
+                            <ey:element name="address" type="ey:string"></ey:element>
+                            <ey:element name="emailid" type="ey:string"></ey:element>
+                            <ey:element name="designation" type="desitype"></ey:element>
+                            <ey:element name="specification" type="ey:string"></ey:element>
+                            <ey:element name="yearofexperince" type="ey:string"></ey:element>
+                            <ey:element name="salary" type="MySal"></ey:element>
+
+                        </ey:sequence>
+                    </ey:complexType>
+                </ey:element>
+            </ey:sequence>
+        </ey:complexType>
+    </ey:element>
+    <ey:element name="designation" type="desitype" />
+
+    <ey:simpleType name="desitype">
+        <ey:restriction base="ey:string">
+            <ey:enumeration value="Doctor" />
+            <ey:enumeration value="Nurse" />
+            <ey:enumeration value="Pharmacist" />
+        </ey:restriction>
+    </ey:simpleType>
+
+    <ey:simpleType name="MySal">
+        <ey:restriction base="ey:integer">
+            <ey:minInclusive value="50000"></ey:minInclusive>
+            <ey:maxInclusive value="350000"></ey:maxInclusive>
+        </ey:restriction>
+    </ey:simpleType>
+</ey:schema>
