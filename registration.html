@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+
+    <title> GATEWAYS </title>
+
+    <!-- bootstrap core css -->
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- nice select  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="registration.css" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bc4d8abcd3.js" crossorigin="anonymous"></script>
+    <script src="registration.js"></script>
+</head>
+
+<body style="background-color:rgb(250, 244, 230)">
+    <div class="samcontainer">
+
+        <h2 style="text-align:center">Sign up</h2>
+        <form onsubmit="RegistrationForm(event)" class="form" id="form">
+            <div class="form-control">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="eg:saranya" onkeypress="return onlyChar (event)" onkeyup=" checkName('firstname')" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="chellappa" onkeypress="return onlyChar (event)" onkeyup=" checkName('lastname')" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="eg:saranya13" onkeyup="checkUserName ()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email ID" onkeyup="checkEmail()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" placeholder="Branch" onkeyup="checkBranch()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="universityname">University Name</label>
+                <input type="text" id="universityname" placeholder="University Name" onkeyup="checkUniversityName()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="state">State</label>
+                <input type="state" id="email" placeholder="State" onkeyup="checkState()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Address" onkeyup="checkAddress()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="age">Age</label>
+                <input type="text" id="age" placeholder="Age" onkeyup="checkAge()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="phoneno">Phone No</label>
+                <input type="text" id="phoneno" placeholder="9678563412" onkeypress="return onlyDigits (event)" onkeyup="checkPhoneNo()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="password" onkeyup="checkPassword()" autocomplete="off" />
+
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Re-Enter Your password" onkeyup="confirmPassword()" autocomplete="off" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+            
+            <button type='submit'>Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<christ>
+    <computer_science>
+        <stu-firstname>Jitendra</stu-firstname>
+        <stu-lastname>Kumar</stu-lastname>
+        <stu-university>Christ University</stu-university>
+        <stu-phone>9876789976</stu-phone>
+        <stu-email>jitendrakumar@christuniversity.in</stu-email>
+    </computer_science>
+    <computer_science>
+        <stu-firstname>Anu</stu-firstname>
+        <stu-lastname>Menon</stu-lastname>
+        <stu-university>Christ University</stu-university>
+        <stu-phone>9236789976</stu-phone>
+        <stu-email>anumenon@christuniversity.in</stu-email>
+    </computer_science>
+    <computer_science>
+        <stu-firstname>suriya</stu-firstname>
+        <stu-lastname>V</stu-lastname>
+        <stu-university>Christ University</stu-university>
+        <stu-phone>4354389976</stu-phone>
+        <stu-email>suriyav@christuniversity.in</stu-email>
+    </computer_science>
+</christ>

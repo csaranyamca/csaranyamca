@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" src="studentdom.js"> 
+</script>
+</head>
+
+<body>
+
+
+<div>
+<script type="text/javascript">
+xmlDoc=loadXMLDoc("student.xml");
+
+var x=xmlDoc.getElementsByTagName("stu-firstname");
+var y=xmlDoc.getElementsByTagName("stu-lastname");
+var z=xmlDoc.getElementsByTagName("stu-university");
+var z=xmlDoc.getElementsByTagName("stu-phone");
+var z=xmlDoc.getElementsByTagName("stu-email");
+
+
+
+document.write("<h4>"+"A Live Bulletin Board"+"</h4>");
+       for (i=0;i<x.length;i++)
+  { 
+
+  document.write("<h1>"+x[i].childNodes[0].nodeValue+"</h1>"); 
+  document.write(y[i].childNodes[0].nodeValue);
+  document.write(z[i].childNodes[0].nodeValue);
+  document.write("<p>"+"&nbsp;"+"</p>");
+  // document.write("</div>")
+  }
+</script>
+</div>
+</body>
+</html>
