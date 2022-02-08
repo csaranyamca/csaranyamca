@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <title>HOSPITAL MANAGEMENT SYSTEM </title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="event.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+  
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+  
+        tr:nth-child(even) {
+            background-color: #f5f7f6
+        }
+  
+        th {
+            background-color: #070607;
+            color: white;
+        }
+    </style>
+</head>
+<body ng-controller="myctrl">
+    <div ng-controller="myctrl">
+        
+        Rows to display:<input type="number" step="1" min="0" max="unbound" ng-model="rowlimit"><br><br>
+    <table cellpadding="2" cellspacing="2" border ="1">
+        <tr>
+            <th>Emp ID                                
+           
+            <br>
+                <input type="text" ng-model="search.id"> </th>
+            <th>Emp Name
+            <br>
+                <input type="text" ng-model="search.name"></th>
+            <th>Age
+            <br>
+                <input type="text" ng-model="search.age"></th>
+            <th>Address
+            <br>
+                <input type="text" ng-model="search.address"></th>
+            <th>Designation
+            <br>
+                <input type="text" ng-model="search.designation"></th>
+            <th>Salary
+            <br>
+                <input type="text" ng-model="search.salary"></th>
+            
+        </tr>
+        <tr ng-repeat="item in names| filter:search | limitTo:rowlimit | orderBy:'id' ">
+            <td>{{item.id}}</td>
+            <td>{{item.name|uppercase}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.address|lowercase}}</td>
+            <td>{{item.designation}}</td>
+            <td>&#8377{{item.salary}}</td>
+        
+        </tr>
+    </table>
+    
+</body>
+</html>

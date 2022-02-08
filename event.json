@@ -1,0 +1,15 @@
+{
+    "houseInformation":[
+      {"id":1,"name":"Khasi", "age":"56","address":"Bangalore","designation":"Doctor","salary":320000},
+      {"id":2,"name":"Uma", "age":"40","address":"Mysore","designation":"Doctor","salary":250000},
+      {"id":3,"name":"Suresh", "age":"50","address":"Chennai","designation":"Doctor","salary":250000},
+      {"id":4,"name":"Geetha", "age":"40","address":"Jp nagar","designation":"Nurse","salary":100000},
+      {"id":5,"name":"George", "age":"36","address":"Blore","designation":"Nurse","salary":80000},
+      {"id":6,"name":"Kishore", "age":"30","address":"Mysore","designation":"Nurse","salary":60000},
+      {"id":7,"name":"Swapna", "age":"25","address":"chennai","designation":"Pharmacist","salary":50000},
+      {"id":8,"name":"Sona", "age":"30","address":"Electronic ","designation":"Pharmacist","salary":45000},
+      {"id":9,"name":"Porvi", "age":"40","address":"kormangala","designation":"Pharmacist","salary":45000},
+      {"id":10,"name":"Rohit", "age":"45","address":"VV puram","designation":"Pharmacist","salary":40000}
+      
+    ]
+}
